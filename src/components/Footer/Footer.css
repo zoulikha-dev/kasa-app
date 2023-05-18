@@ -1,0 +1,17 @@
+footer {
+    background-color: black;
+    height: 209px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo2 {
+    margin-top: 50px;
+    width: 122px;
+    height: 39.44px;
+}
