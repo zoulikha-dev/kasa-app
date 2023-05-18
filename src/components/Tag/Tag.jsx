@@ -1,7 +1,8 @@
 import React from "react";
+import "./Tag.css";
 
-const Tag = () => {
-  return <div></div>;
+const Tag = ({ text }) => {
+  return <div className="tag"> {text} </div>;
 };
 
 export default Tag;
