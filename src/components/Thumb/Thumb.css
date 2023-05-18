@@ -1,0 +1,19 @@
+.thumb {
+    width: 340px;
+    height: 340px;
+    background: linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgba(86, 2, 2, 0.82) 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+h2 {
+    width: 300px;
+    height: 52px;
+    margin: 0px 0px 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
