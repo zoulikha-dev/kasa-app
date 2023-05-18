@@ -1,0 +1,13 @@
+.container-thumb {
+    width: 1240px;
+    height: 829px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #F6F6F6;
+    border-radius: 25px;
+    align-content: space-around;
+    margin: 100px;
+}   
+
+
