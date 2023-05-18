@@ -1,7 +1,14 @@
 import React from "react";
+import "./Thumb.css";
 
-const Thum = () => {
-  return <div></div>;
+const Thumb = () => {
+  return (
+    <div className="thumb">
+      <h2>
+        Titre de la <br /> location
+      </h2>
+    </div>
+  );
 };
 
-export default Thum;
+export default Thumb;
