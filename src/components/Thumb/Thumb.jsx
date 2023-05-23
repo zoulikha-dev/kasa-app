@@ -1,12 +1,11 @@
 import React from "react";
 import "./Thumb.css";
 
-const Thumb = () => {
+const Thumb = ({ title, image }) => {
   return (
     <div className="thumb">
-      <h2>
-        Titre de la <br /> location
-      </h2>
+      <img src={image} alt={title} />
+      <h2>{title}</h2>
     </div>
   );
 };
