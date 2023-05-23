@@ -1,13 +1,13 @@
 .container-thumb {
     width: 1240px;
-    height: 829px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background: #F6F6F6;
+    background: #F7F7F7;
     border-radius: 25px;
     align-content: space-around;
     margin: 100px;
+    padding: 50px 10px 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crée trois colonnes de largeur égale */
+    grid-gap: 50px;
 }   
 
 
