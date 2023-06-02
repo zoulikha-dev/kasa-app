@@ -11,21 +11,22 @@ const About = () => {
       <div className="container-banner2">
         <Banner image={bannerImage} />
       </div>
-
-      <div className="collapse">
-        <Collapse label="Fiabilité" />
-        <Collapse label="Respect">
-          <div className="content-p">
-            <p className="content-collapse ">
-              La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
-              comportement <br /> discriminatoire ou de perturbation du
-              voisinage entraînera une exclusion de <br /> notre plateforme.
-            </p>
-          </div>
-        </Collapse>
-        <Collapse label="Service" />
-        <Collapse label="Sécurité" />
-      </div>
+      <main className="collapse1">
+        <div className="collapse">
+          <Collapse label="Fiabilité" />
+          <Collapse label="Respect">
+            <div className="content-p">
+              <p className="content-collapse ">
+                La bienveillance fait partie des valeurs fondatrices de Kasa.
+                Tout comportement <br /> discriminatoire ou de perturbation du
+                voisinage entraînera une exclusion de <br /> notre plateforme.
+              </p>
+            </div>
+          </Collapse>
+          <Collapse label="Service" />
+          <Collapse label="Sécurité" />
+        </div>
+      </main>
     </>
   );
 };
