@@ -1,0 +1,43 @@
+.collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-p {
+    margin: 0;
+    width: 1023px;
+    height: 146px;
+    background: #F6F6F6;
+    border-radius: 5px;
+}
+
+.content-collapse {
+    padding-top: 27px;
+    padding-left: 18px ;
+    margin: 0; 
+    font-size: 24px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+.collapse .toggle {
+    border: none;
+    background-color:#FF6060 ;
+    border-radius: 5px;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    width: 1023px;
+    height: 47px;
+}
+
+.container-banner2 img{
+    margin-left: 100px;
+    background: #000000;
+    filter: brightness(60%);
+    border-radius: 25px;
+}
