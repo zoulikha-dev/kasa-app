@@ -1,13 +1,33 @@
 .container-thumb {
     width: 1240px;
-    background: #F7F7F7;
+    background: #F6F6F6;
     border-radius: 25px;
     align-content: space-around;
     margin: 100px;
-    padding: 50px 10px 50px 50px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Crée trois colonnes de largeur égale */
-    grid-gap: 50px;
+    grid-template-columns: 340px 340px 340px;
+    grid-gap: 0 50px;
 }   
 
+.container-banner {
+    position: relative;
+}
 
+
+.container-banner img {
+    margin-left: 100px;
+    background: #000000;
+    filter: brightness(50%);
+    border-radius: 25px;
+}
+
+.container-banner h1 {
+    margin: 0 auto;
+    position: absolute;
+    left: 29%;
+    top: 33.7%;
+}
+
+.container-thumb a {
+    margin: 56px 50px 56px 50px;
+}
