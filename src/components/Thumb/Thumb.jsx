@@ -1,12 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Thumb.css";
 
-const Thumb = ({ title, image }) => {
+const Thumb = ({ id, title, cover }) => {
   return (
-    <div className="thumb">
-      <img src={image} alt={title} />
-      <h2>{title}</h2>
-    </div>
+    // Utilisation du composant Link pour créer un lien vers la page Housing correspondante
+    <Link to={`/housing/${id}`}>
+      <div className="thumb">
+        <img src={cover} alt={title} />
+        <h2>{title}</h2>
+      </div>
+    </Link>
   );
 };
 
