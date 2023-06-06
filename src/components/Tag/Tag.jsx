@@ -4,7 +4,7 @@ import "./Tag.css";
 const Tag = ({ text }) => {
   return (
     <div className="tag">
-      <p>{text}</p>
+      <h4>{text}</h4>
     </div>
   );
 };
