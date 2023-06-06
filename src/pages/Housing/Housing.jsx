@@ -5,6 +5,7 @@ import "./Housing.css";
 import Carousel from "../../components/Carousel/Carousel";
 import { useParams } from "react-router-dom";
 import Host from "../../components/Host/Host";
+import Rating from "../../components/Rating/Rating";
 
 const Housing = () => {
   const { id } = useParams(); // Récupération de la valeur de l'ID à partir des paramètres d'URL grâce au hook useParams
@@ -29,13 +30,13 @@ const Housing = () => {
     <>
       {housing ? (
         <div>
-          <div className="container-carroussel">
+          <div>
             <Carousel images={housing.pictures} />
           </div>
 
-          <div>
-            <div>
-              <h1 className="housing-title"> {housing.title} </h1>
+          <div className="container-principal">
+            <div className="container-title">
+              <h4 className="housing-title"> {housing.title} </h4>
               <p className="housing-location"> {housing.location} </p>
               <div className="container-tag">
                 {housing.tags.map((tag, i) => (
@@ -43,16 +44,21 @@ const Housing = () => {
                 ))}
               </div>
             </div>
-            <div className="rating">
-              <Host name={housing.host.name} picture={housing.host.picture} />
+            <div className="container-bis">
+              <div>
+                <Host name={housing.host.name} picture={housing.host.picture} />
+              </div>
+              <div className="rating">
+                <Rating rating={housing.rating} />
+              </div>
             </div>
           </div>
 
           <div className="container-collapse">
             <Collapse label="Description">
               <div className="container-description">
-                <p className="content-description">{housing.description}</p>{" "}
-                //Paragraphe avec le contenu de la description du logement
+                <p className="content-description">{housing.description}</p>
+                {/* Paragraphe avec le contenu de la description du logement */}
               </div>
             </Collapse>
             <Collapse label="Équipements">
@@ -60,7 +66,7 @@ const Housing = () => {
                 <ul className="content-liste">
                   {housing.equipments && // Vérification que la liste des équipements existe dans le logement
                     housing.equipments.map((equipments, index) => (
-                      <li key={index}>{equipments}</li> // Élément de liste pour chaque équipement
+                      <li key={equipments + index}>{equipments}</li> // Élément de liste pour chaque équipement
                     ))}
                 </ul>
               </div>
