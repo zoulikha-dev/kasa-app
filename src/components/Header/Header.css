@@ -32,3 +32,44 @@ header {
     color: #FF6060;
     border-bottom: 2px solid #FF6060;
 }
+
+
+/* Responsive Tablettes */
+@media (min-width: 769px) and (max-width: 992px) {
+    .logo {
+        width: 180px;
+        height: 52px;
+    }
+
+    .nav .menu {
+        gap: 25px;
+    }
+
+    .lien {
+       font-size: 16px;
+    }
+}
+
+
+/* Responsive Mobile */
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 145px;
+        height: 47px;
+    }
+
+    .nav .menu {
+        gap: 10px;
+    }
+
+    .lien {
+       font-size: 12px;
+    }
+
+    .lien:hover {
+        border-bottom: 1px solid #FF6060;
+    }
+
+
+    
+}
