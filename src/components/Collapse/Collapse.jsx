@@ -3,8 +3,9 @@ import "./Collapse.css";
 
 const Collapse = (props) => {
   const [isOpen, setIsOpen] = useState(false); //isOpen est initialisé à false, ce qui veux dire que le contenu du collapse est masqué
+
   return (
-    <div className="collapse">
+    <div>
       <button className="toggle" onClick={() => setIsOpen(!isOpen)}>
         {/* A chaquefois que l'on clique sur le bouton, la fonction fléchée est
         exécutée. //setIsopen ... inverse la valeur de isOpen. */}
