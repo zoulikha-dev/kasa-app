@@ -1,0 +1,29 @@
+.container-carroussel {
+    position: relative;
+}
+
+.img-caroussel {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    margin-left: 90px;
+    background-size: cover;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    position: absolute;
+    top: 156px;
+    left: 123px;
+}
+
+.next {
+    position: absolute;
+    top: 156px;
+    left: 1270px;
+}
