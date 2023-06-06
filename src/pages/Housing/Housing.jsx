@@ -45,7 +45,7 @@ const Housing = () => {
               </div>
             </div>
             <div className="container-bis">
-              <div>
+              <div className="name">
                 <Host name={housing.host.name} picture={housing.host.picture} />
               </div>
               <div className="rating">
