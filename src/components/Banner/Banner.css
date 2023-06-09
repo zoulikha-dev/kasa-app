@@ -1,8 +1,57 @@
-.container-banner h1 {
+.banner {
+    position: relative;
+}
+
+.banner h1 {
     font-family: 'Montserrat' sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
     line-height: 142.6%;
-    color: white
+    color: white;
+    margin: 0 auto;
+    position: absolute;
+    left: 29%;
+    top: 33.7%;
+}
+
+.banner img {
+    width: 85%;
+    margin: 0 100px 0 100px;
+    background: #000000;
+    filter: brightness(50%);
+    border-radius: 25px;
+}
+
+/* Responsive Tablettes */
+@media (min-width: 769px) and (max-width: 992px) {
+    .banner h1 {
+        font-size: 32px;
+        line-height: 120%;
+        left: 19%;
+        top: 27%;
+    } 
+    .banner img {
+        width: 90%;
+        margin: 0 50px 0 50px;
+        border-radius: 15px;
+        height: 165px;
+    }
+}
+
+/* Responsive Mobile */
+@media screen and (max-width: 768px) {
+    .banner h1 {
+        width: 217px;
+        font-size: 24px;
+        line-height: 100%;
+        left: 10%;
+        top: 20%;  
+    } 
+    .banner img {
+        width: 94%;
+        margin: 0 20px 0 20px;
+        border-radius: 10px;
+        height: 111px;
+    }
 }
