@@ -3,7 +3,7 @@ import "./Banner.css";
 const Banner = ({ image, titre }) => {
   return (
     <div className="banner">
-      <img src={image} alt="Banner" />
+      <img src={image} alt={titre} />
       <h1> {titre} </h1>
     </div>
   );
