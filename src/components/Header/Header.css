@@ -36,6 +36,10 @@ header {
 
 /* Responsive Tablettes */
 @media (min-width: 769px) and (max-width: 992px) {
+    header {
+        margin: 30px 50px 50px 50px;
+    }
+    
     .logo {
         width: 180px;
         height: 52px;
@@ -53,6 +57,11 @@ header {
 
 /* Responsive Mobile */
 @media screen and (max-width: 768px) {
+    header {
+        margin: 20px 20px 20px 20px;
+    }
+
+
     .logo {
         width: 145px;
         height: 47px;
