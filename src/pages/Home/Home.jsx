@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <main>
-      <div className="container-banner">
+      <div>
         <Banner image={bannerImage} titre={`Chez vous, partout et ailleurs`} />
       </div>
       <div className="container-thumb">
