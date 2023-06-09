@@ -62,8 +62,8 @@ const Housing = () => {
               </div>
             </Collapse>
             <Collapse label="Équipements">
-              <div className="container-liste">
-                <ul className="content-liste">
+              <div className="container-description">
+                <ul className="content-description">
                   {housing.equipments && // Vérification que la liste des équipements existe dans le logement
                     housing.equipments.map((equipments, index) => (
                       <li key={equipments + index}>{equipments}</li> // Élément de liste pour chaque équipement
