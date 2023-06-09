@@ -5,6 +5,7 @@ const Carousel = ({ images }) => {
   //Déclare une variable d'état "currentSLide" pour suivre l'index de l'image actuelle ds le diapo
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  // Fonction pour passer à la diapositive précédente
   const prevSlide = () => {
     setCurrentSlide((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
@@ -13,6 +14,7 @@ const Carousel = ({ images }) => {
     // Sinon, on retire l'index pour passer à la diapositive précédente
   };
 
+  // Fonction pour passer à la diapositive suivante
   const nextSlide = () => {
     setCurrentSlide((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
@@ -27,13 +29,28 @@ const Carousel = ({ images }) => {
 
   return (
     <div className="container-carroussel">
-      <button onClick={prevSlide}>
-        <img className="prev" src={prev} alt="Previous" />
-      </button>
+      {/* cela permet de vérifier si il y a plus d'une image, affiche le btn de la diapo. */}
+      {images.length > 1 && (
+        <button onClick={prevSlide}>
+          <img className="prev" src={prev} alt="Previous" />
+        </button>
+      )}
+      {/* Affiche l'image de la diapositive actuelle */}
       <img className="img-caroussel" src={images[currentSlide]} alt="Slide" />
-      <button onClick={nextSlide}>
-        <img className="next" src={next} alt="Next" />
-      </button>
+
+      {/* Cela permet de vérifier si il y a plus d'une image, affiche le bouton de diapo suivante */}
+      {images.length > 1 && (
+        <button onClick={nextSlide}>
+          <img className="next" src={next} alt="Next" />
+        </button>
+      )}
+
+      {/* Cela permet de vérifier s'il y a plus d'une image, affiche le compteur de la diapo. */}
+      {images.length > 1 && (
+        <div className="slide-counter">
+          {currentSlide + 1}/{images.length}
+        </div>
+      )}
     </div>
   );
 };
