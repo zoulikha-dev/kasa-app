@@ -3,10 +3,11 @@
 }
 
 .img-caroussel {
-    width: 1240px;
+    width: 90%;
     height: 415px;
     border-radius: 25px;
-    margin-left: 90px;
+    margin-left: 100px;
+    margin-right: 100px;
     background-size: cover;
 }
 
@@ -25,5 +26,62 @@ button {
 .next {
     position: absolute;
     top: 156px;
-    left: 1270px;
+    right: 60px;
+}
+
+.slide-counter {
+    position: absolute;
+    left: 50%;
+    top: 86%;
+    color: #FFFF;
+    font-size: 18px;
+}
+
+/* Responsive Tablettes */
+@media (min-width: 769px) and (max-width: 992px) {
+    .img-caroussel {
+        width: 90%;
+        height: 320px;
+        border-radius: 15px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .prev {
+        width: 40px;
+        height: 60px;
+        top: 130px;
+        left: 70px;
+    }
+    .next{
+        width: 40px;
+        height: 60px;
+        top: 130px;
+        right: 55px;
+    }
+}
+
+/* Responsive Mobile */
+@media screen and (max-width: 768px) {
+    .slide-counter{
+        display: none;
+    }
+    .img-caroussel {
+        width: 90%;
+        height: 255px;
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .prev {
+        width: 12px;
+        height: 19px;
+        top: 110px;
+        left: 50px;
+    }
+    .next{
+        width: 12px;
+        height: 19px;
+        top: 110px;
+        right: 55px;
+    }
 }
