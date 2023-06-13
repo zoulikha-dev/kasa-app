@@ -8,7 +8,7 @@ import Host from "../../components/Host/Host";
 import Rating from "../../components/Rating/Rating";
 
 const Housing = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); //Déclaration d'une variable qui utilise le hook useNavigate.
   const { id } = useParams(); // Récupération de la valeur de l'ID à partir des paramètres d'URL grâce au hook useParams
   const [housing, setHousing] = useState(); // Initialisation du state housing avec une valeur par défaut vide
 
@@ -23,7 +23,7 @@ const Housing = () => {
         if (foundHousing) {
           setHousing(foundHousing); // Mise à jour du state housing avec le logement trouvé
         } else {
-          navigate("/logement-non-trouvé");
+          navigate("/logement-non-trouvé"); // Redirection vers une page indiquant que le logement n'a pas été trouvé
         }
       })
       .catch((error) => console.log(error)); // Gestion des erreurs
