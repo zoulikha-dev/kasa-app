@@ -3,11 +3,12 @@ import Tag from "../../components/Tag/Tag";
 import Collapse from "../../components/Collapse/Collapse";
 import "./Housing.css";
 import Carousel from "../../components/Carousel/Carousel";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Host from "../../components/Host/Host";
 import Rating from "../../components/Rating/Rating";
 
 const Housing = () => {
+  const navigate = useNavigate();
   const { id } = useParams(); // Récupération de la valeur de l'ID à partir des paramètres d'URL grâce au hook useParams
   const [housing, setHousing] = useState(); // Initialisation du state housing avec une valeur par défaut vide
 
@@ -21,6 +22,8 @@ const Housing = () => {
         //Cette condition vérifie si le logement à été trouvé. dans ce cas setPictures est utilisé pour mettre à jour le stat pictures avec la liste d'image trouvé. (...)permet d'afficher les img
         if (foundHousing) {
           setHousing(foundHousing); // Mise à jour du state housing avec le logement trouvé
+        } else {
+          navigate("/logement-non-trouvé");
         }
       })
       .catch((error) => console.log(error)); // Gestion des erreurs
