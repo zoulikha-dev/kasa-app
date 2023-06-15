@@ -2,6 +2,7 @@ import React from "react";
 import Collapse from "../../components/Collapse/Collapse";
 import Banner from "../../components/Banner/Banner";
 import "./About.css";
+import "./../../styles/index.css";
 
 const About = () => {
   const bannerImage = "/banner2.png";

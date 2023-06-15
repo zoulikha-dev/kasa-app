@@ -8,7 +8,7 @@
 }
 
 header {
-    margin: 40px 100px 50px 100px;
+    margin: 40px 0 50px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,18 +37,15 @@ header {
 /* Responsive Tablettes */
 @media (min-width: 769px) and (max-width: 992px) {
     header {
-        margin: 30px 50px 50px 50px;
+        margin: 30px 0 50px 0;
     }
-    
     .logo {
         width: 180px;
         height: 52px;
     }
-
     .nav .menu {
         gap: 25px;
     }
-
     .lien {
        font-size: 16px;
     }
@@ -58,27 +55,19 @@ header {
 /* Responsive Mobile */
 @media screen and (max-width: 768px) {
     header {
-        margin: 20px 20px 20px 20px;
+        margin: 20px 0 20px 0;
     }
-
-
     .logo {
         width: 145px;
         height: 47px;
     }
-
     .nav .menu {
         gap: 10px;
     }
-
     .lien {
        font-size: 12px;
     }
-
     .lien:hover {
         border-bottom: 1px solid #FF6060;
-    }
-
-
-    
+    }   
 }

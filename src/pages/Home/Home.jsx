@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"; //composant react
 import Banner from "../../components/Banner/Banner";
 import Thumb from "../../components/Thumb/Thumb";
 import "./Home.css";
+import "./../../styles/index.css";
 
 const Home = () => {
   //UseEffect permet de déclencher le Fetch et useState permet de stocker le retour de l'api dans le state

@@ -6,6 +6,8 @@ import Carousel from "../../components/Carousel/Carousel";
 import { useNavigate, useParams } from "react-router-dom";
 import Host from "../../components/Host/Host";
 import Rating from "../../components/Rating/Rating";
+import "./../../styles/index.css";
+import "../../components/Rating/Rating.css";
 
 const Housing = () => {
   const navigate = useNavigate(); //Déclaration d'une variable qui utilise le hook useNavigate.
